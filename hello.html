@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello HTML</title>
+  <style>
+    body {
+      background-color: sandybrown;
+    }
+    #main-heading {
+      font-size: 50px;
+      font-family: Times New Roman;
+    }
+    .special-box {
+      border: 2px black;
+    }
+  </style>
+  <script>
+    function changeBackgroundColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</head>
+<body>
+  <h1 id="main-heading">Welcome to Eden's Book Recommendations</h1>
+  <h2>Struggling to find interesting books? Then this is for you!</h2>
+  <p>Here I will share my favorite reads, and why I enjoy them.</p>
+  <img src="https://img-cdn.inc.com/image/upload/w_1024,h_576,c_fill/images/panoramic/GettyImages-900301626_437925_t2i3bm.jpg" width="400" alt="Books image">
+  <div class="special-box">look for more info down below!</div>
+  <a href="https://en.wikipedia.org/wiki/Book">Information about books!</a>
+  <p>What is your favorite genre?</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Fantasy</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Magical</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Kingdom</label>
+  <div></div>
+  <button onclick="changeBackgroundColor('lightblue')">Change BG Color</button>
+</body>
+</html>
